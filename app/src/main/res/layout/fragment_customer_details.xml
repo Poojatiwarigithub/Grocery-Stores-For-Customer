@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@drawable/backgroud_image"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+tools:context=".Fragments.CustomerDetailsFragment">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout">
+
+
+    <ImageView
+        android:id="@+id/header_cover_image"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:scaleType="centerCrop"
+        android:src="@drawable/nav_menu_header_bg"
+        app:srcCompat="@drawable/nav_menu_header_bg" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:clickable="true"
+        app:civ_border_width="3dp"
+        app:civ_border_color="#FFFFFFFF"
+        android:id="@+id/profile"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/header_cover_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-130dp"
+        android:elevation="5dp"
+        android:padding="20dp"
+        android:scaleType="centerCrop"/>
+
+    <RelativeLayout
+        android:id="@+id/profile_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header_cover_image">
+
+
+        <ImageView
+            android:id="@+id/edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:clickable="true"
+            android:src="@android:drawable/ic_menu_edit" />
+
+
+        <TextView
+            android:id="@+id/customer_Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="55dp"
+            android:fontFamily="@font/deroidserifboldfont"
+            android:textColor="@color/profiledetaisheader"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/emailid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/customer_Name"
+            android:fontFamily="@font/quicksandbold"
+            android:layout_centerHorizontal="true"
+            android:textSize="17dp"
+            android:layout_marginTop="3dp"
+            android:textColor="@color/profiledetailsvalue" />
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:id="@+id/linediver"
+            android:layout_below="@+id/emailid"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/divider_line" />
+
+        <TextView
+            android:id="@+id/otherdetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/deroidserifboldfont"
+            android:background="@color/colorPrimaryDark"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/linediver"
+            android:layout_marginTop="-10dp"
+            android:text="OTHER DEATILS"
+            android:textColor="#fff"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearlayout1"
+            android:layout_below="@+id/otherdetails"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/deroidserifboldfont"
+                android:paddingStart="15dp"
+                android:layout_marginTop="20dp"
+                android:text="Contact:"
+                android:textColor="@color/profiledetaisheader"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/contact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="17dp"
+                android:fontFamily="@font/quicksandbold"
+                android:paddingStart="15dp"
+                android:textColor="@color/profiledetailsvalue"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/divider_line" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/deroidserifboldfont"
+                android:paddingStart="15dp"
+                android:text="Area Location:"
+                android:textColor="@color/profiledetaisheader"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/customersubcity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/quicksandbold"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:textSize="17dp"
+                android:textColor="@color/profiledetailsvalue"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/divider_line" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/deroidserifboldfont"
+                android:paddingStart="15dp"
+                android:text="City:"
+                android:textColor="@color/profiledetaisheader"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/customercity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/quicksandbold"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:textSize="17dp"
+                android:textColor="@color/profiledetailsvalue"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/divider_line" />
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profile_layout"
+        android:padding="15dp">
+
+        <Button
+            android:id="@+id/logoutbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/deroidserifboldfont"
+            android:background="@drawable/buttonbackground"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="LOGOUT" />
+    </RelativeLayout>
+</RelativeLayout>
+</ScrollView>

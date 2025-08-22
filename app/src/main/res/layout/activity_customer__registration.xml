@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/backgroud_image"
+    android:gravity="center_horizontal"
+    tools:context=".Customer_Registration">
+
+    <include
+    android:id="@+id/toolbar_customer_registration"
+    layout="@menu/bar_layout">
+
+    </include>
+
+    <ScrollView
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:layout_below="@id/toolbar_customer_registration">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_below="@id/toolbar_customer_registration">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/deroidserifboldfont"
+            android:text="Create a New Customer Account"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="30dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/deroidserifboldfont"
+                android:text="Enter Your Name:"
+                android:textColor="#fff"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:maxLength="26"
+                android:id="@+id/userename"
+                android:textColor="#fff">
+            </EditText>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/deroidserifboldfont"
+                android:text="Enter Your Email_id:"
+                android:textColor="#fff"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:id="@+id/useremailid"
+                android:maxLength="65"
+                android:maxLines="2"
+                android:textColor="#fff">
+            </EditText>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/deroidserifboldfont"
+                android:text="Enter Your City:"
+                android:textColor="#fff"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+
+                <Spinner
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:spinnerMode="dropdown"
+                    android:soundEffectsEnabled="true"
+                    android:id="@+id/usercity">
+                </Spinner>
+
+            <View
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#045369"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/deroidserifboldfont"
+                android:text="Select Area Location:"
+                android:textColor="#fff"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+
+            <Spinner
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dropdown"
+                android:soundEffectsEnabled="true"
+                android:id="@+id/usersubcity">
+            </Spinner>
+
+            <View
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#045369"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/deroidserifboldfont"
+                android:text="Enter Your Contact:"
+                android:textColor="#fff"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:id="@+id/usercontact"
+                android:maxLength="10"
+                android:inputType="number"
+                android:textColor="#fff">
+            </EditText>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/deroidserifboldfont"
+                android:text="Enter Password:"
+                android:textColor="#fff"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:id="@+id/userpassword"
+                android:maxLength="15"
+                android:inputType="textPassword"
+                android:textColor="#fff">
+            </EditText>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/deroidserifboldfont"
+                android:text="Enter Confirm Password:"
+                android:textColor="#fff"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:inputType="textPassword"
+                android:maxLength="15"
+                android:id="@+id/userconfirmpassword"
+                android:textColor="#fff">
+            </EditText>
+
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/registerBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/buttonbackground"
+            android:fontFamily="@font/deroidserifboldfont"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="Register" />
+
+
+        <TextView
+            android:id="@+id/gotologin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/deroidserifboldfont"
+            android:gravity="center"
+            android:text="Already Created Account? Login!"
+            android:textSize="17dp" />
+
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

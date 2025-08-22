@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/backgroud_image"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.NewOrderBookCustFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <android.widget.SearchView
+        android:id="@+id/search_bar_to_search_shoppers"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:queryHint="Search shop by Location, Shop-Name"
+        android:background="@drawable/edittextborderforspinner"
+        android:clickable="true"
+        android:layout_margin="10dp">
+    </android.widget.SearchView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recylerview_show_shopper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager">
+    </androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>

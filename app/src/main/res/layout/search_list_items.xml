@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    app:cardElevation="5dp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:paddingStart="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile"
+            android:layout_width="70dp"
+            android:layout_centerVertical="true"
+            android:layout_height="70dp">
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/status_on"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:visibility="gone"
+            app:civ_border_width="10dp"
+            app:civ_border_color="#05DF29"
+            android:src="@mipmap/ic_launcher_round"
+            android:layout_below="@id/profile"
+            android:layout_toRightOf="@id/profile"
+            android:layout_marginTop="-14dp"
+            android:layout_marginLeft="-15dp">
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+    <LinearLayout
+        android:layout_toRightOf="@+id/status_on"
+        android:id="@+id/search_linearlaout"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        android:padding="10dp">
+        <TextView
+            android:id="@+id/shopername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Shopper-Name: "
+            android:fontFamily="@font/deroidserifboldfont"
+            android:textSize="16dp"
+            android:maxLines="1"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:padding="2dp"/>
+
+        <TextView
+            android:id="@+id/shopname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Shop-Name: "
+            android:fontFamily="@font/quicksandbold"
+            android:textSize="14dp"
+            android:maxLines="1"
+            android:textColor="@color/colorPrimaryDark"
+            android:padding="2dp"/>
+
+        <TextView
+            android:id="@+id/contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/quicksandbold"
+            android:textSize="14dp"
+            android:maxLines="1"
+            android:textColor="@color/colorPrimaryDark"
+            android:padding="2dp"/>
+    </LinearLayout>
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimary"/>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+    //For Contact update
+        <LinearLayout
+            android:id="@+id/updatecontact_linearlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dialogbackground"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/shopdetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/deroidserifboldfont"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:text="PLEASE ENTER BELOW DEATILS"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearlayout1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/deroidserifboldfont"
+                    android:paddingStart="15dp"
+                    android:layout_marginTop="35dp"
+                    android:text="Current Contact:"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/current_contact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/quicksandbold"
+                    android:paddingStart="15dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/white"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/deroidserifboldfont"
+                    android:paddingStart="15dp"
+                    android:layout_marginTop="15dp"
+                    android:text="New Contact:"
+                    android:textColor="@color/white" />
+
+                <EditText
+                    android:id="@+id/new_contact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/quicksandbold"
+                    android:layout_marginTop="5dp"
+                    android:inputType="number"
+                    android:numeric="integer"
+                    android:maxLength="10"
+                    android:paddingStart="15dp"
+                    android:textColor="@color/white"/>
+
+
+            </LinearLayout>
+
+            <ProgressBar
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/progresbar_contact"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="25dp">
+
+
+
+
+                <Button
+                    android:id="@+id/Cancelbtn"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:background="@drawable/buttonbackground"
+                    android:fontFamily="@font/deroidserifboldfont"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:text="CANCEL" />
+
+
+                <Button
+                    android:id="@+id/Updatebtn"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:background="@drawable/buttonbackground"
+                    android:fontFamily="@font/deroidserifboldfont"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:text="SAVE" />
+
+            </LinearLayout>
+        </LinearLayout>
+    //For Forgotten Link
+
+    <LinearLayout
+        android:id="@+id/forgot_password_linear_layout"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialogbackground"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center"
+
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/forgote_password"
+            android:layout_gravity="center">
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/deroidserifboldfont"
+                android:text="Yo! Forgot Your Password?"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/deroidserifboldfont"
+                android:layout_marginTop="9dp"
+                android:text="No warries! Enter your email and we will send you a reset."
+                android:textColor="@color/white"
+                android:textSize="10sp" />
+
+
+            <EditText
+                android:id="@+id/email_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/quicksandbold"
+                android:layout_marginTop="5dp"
+                android:maxLength="65"
+                android:maxLines="2"
+                android:textColor="@color/white"/>
+
+        <ProgressBar
+            android:layout_marginTop="10dp"
+            android:id="@+id/progresbar_email"
+            android:layout_width="wrap_content"
+            android:visibility="gone"
+            android:layout_height="wrap_content"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="25dp">
+
+
+            <Button
+                android:id="@+id/Cancelbtnforemailforgot"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:background="@drawable/buttonbackground"
+                android:fontFamily="@font/deroidserifboldfont"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="CANCEL" />
+
+
+            <Button
+                android:id="@+id/Updatebtnforemailforgot"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:background="@drawable/buttonbackground"
+                android:fontFamily="@font/deroidserifboldfont"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="SEND" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

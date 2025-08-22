@@ -1,0 +1,26 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar.Bridge">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowDisablePreview">true</item>
+    </style>
+
+    <style name="MenuStyle" parent="Theme.AppCompat.Light">
+        <item name="android:textColorPrimary">@color/colorPrimaryDark</item>
+        <item name="android:fontFamily">@font/deroidserifboldfont</item>
+        <item name="android:textSize">15dp</item>
+        <item name="overlapAnchor">false</item>
+        <item name="android:windowDisablePreview">true</item>
+
+
+    </style>
+
+    <style name="ToolbarBlack" parent="Theme.MaterialComponents.Light.NoActionBar.Bridge">
+        <item name="colorPrimaryDark">@android:color/black</item>
+    </style>
+
+</resources>

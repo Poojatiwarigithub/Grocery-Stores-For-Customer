@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@drawable/backgroud_image"
+    android:gravity="center_horizontal"
+    tools:context=".CustomerLogin">
+
+    <include
+        android:id="@+id/toolbar_customer_login"
+        layout="@menu/bar_layout">
+
+    </include>
+
+    <ScrollView
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:layout_below="@id/toolbar_customer_login">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/welcomeid"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/deroidserifboldfont"
+                android:text="Welcome Back Customer!"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                android:padding="15dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/deroidserifboldfont"
+                    android:text="Enter Email_Id:"
+                    android:textColor="#fff"
+                    android:textSize="15sp"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/emailid"
+                    android:maxLength="65"
+                    android:maxLines="2"
+                    android:textColor="#fff">
+                </EditText>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/deroidserifboldfont"
+                    android:text="Password"
+                    android:textColor="#fff"
+                    android:textSize="15sp"
+                    android:textStyle="bold"/>
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/userpassword"
+                    android:inputType="textPassword"
+                    android:maxLength="15"
+                    android:textColor="#fff">
+                </EditText>
+
+                <TextView
+                    android:id="@+id/forgotten_password"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/deroidserifboldfont"
+                    android:text="Forgot Password?"
+                    android:textColor="#fff"
+                    android:textSize="15sp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/progressbar"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </ProgressBar>
+
+            <Button
+                android:id="@+id/loginBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/buttonbackground"
+                android:fontFamily="@font/deroidserifboldfont"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="Login" />
+
+
+            <TextView
+                android:id="@+id/gotologin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:textColor="#fff"
+                android:fontFamily="@font/deroidserifboldfont"
+                android:gravity="center"
+                android:text="New Customer? Sign Up!"
+                android:textSize="17dp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

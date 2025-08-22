@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:layout_gravity="center"
+    android:background="@drawable/backgroud_image"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbarAlwaysDrawVerticalTrack="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/customersdetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/deroidserifboldfont"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/linediver"
+                android:layout_marginTop="20dp"
+                android:text="PLEASE ENTER YOUR DEATILS"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearlayout1"
+                android:layout_marginTop="25dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/deroidserifboldfont"
+                    android:paddingStart="15dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Your Name:"
+                    android:textColor="@color/profiledetaisheader"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/Customer_Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/quicksandbold"
+                    android:layout_marginTop="10dp"
+                    android:paddingStart="15dp"
+                    android:background="@null"
+                    android:textColor="@color/profiledetailsvalue"/>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/divider_line" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/deroidserifboldfont"
+                    android:paddingStart="15dp"
+                    android:layout_marginTop="15dp"
+                    android:text="City:"
+                    android:textColor="@color/profiledetaisheader"
+                    android:textSize="14sp" />
+
+
+                <Spinner
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:spinnerMode="dropdown"
+                    android:paddingStart="15dp"
+                    android:soundEffectsEnabled="true"
+                    android:id="@+id/customercity">
+                </Spinner>
+
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/divider_line" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/deroidserifboldfont"
+                    android:paddingStart="15dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Area Location:"
+                    android:textColor="@color/profiledetaisheader"
+                    android:textSize="14sp" />
+
+
+                <Spinner
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:spinnerMode="dropdown"
+                    android:paddingStart="15dp"
+                    android:soundEffectsEnabled="true"
+                    android:id="@+id/customersubcity">
+                </Spinner>
+
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/divider_line" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp">
+
+                <Button
+                    android:id="@+id/Cancelbtn"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/deroidserifboldfont"
+                    android:background="@drawable/buttonbackground"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:text="CANCEL" />
+
+                <Button
+                    android:id="@+id/Updatebtn"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/deroidserifboldfont"
+                    android:background="@drawable/buttonbackground"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:text="SAVE" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
